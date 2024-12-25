@@ -2,34 +2,22 @@
 <html>
 <head>
 <style>
-body {
+body { 
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    color: white;
-}
-
-.container { 
-    display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    margin-bottom: 20px;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0; 
 }
 
 #tryItButton {
     background-color: #0535b0;
-    border: none;
     color: white; 
     padding: 15px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
 }
 
 #tryItButton:hover {
@@ -39,24 +27,15 @@ body {
 .click-me-button {
     background-color: #a600a6;
     color: white;
-    border: none;
     padding: 15px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px; 
 }
 
 .click-me-button:hover {
     background-color: #cc00cc;
-}
-
-h3 {
-    margin-bottom: 0px;
-    text-align: center; 
 }
 
 </style>
@@ -64,26 +43,16 @@ h3 {
 <body>
 
 <div class="container">
-    <h3>А що це таке?</h3>
     <button id="tryItButton" onclick="myFunction()">????????</button>
 </div>
 
 <script>
     function myFunction() {
-        var container = document.createElement("div"); 
-        container.classList.add("container");
-
-        var text = document.createElement("h3");
-        text.textContent = "Кнопка?";
-
-        var button = document.createElement("BUTTON");
-        var buttonText = document.createTextNode("Кнопка?");
-        button.appendChild(buttonText);
-        button.classList.add("click-me-button");
-
-        container.appendChild(text); 
-        container.appendChild(button);
-        document.body.appendChild(container); 
+        var x = document.createElement("BUTTON");
+        var t = document.createTextNode("Кнопка?");
+        x.appendChild(t);
+        x.classList.add("click-me-button");
+        document.body.appendChild(x);
     }
 </script>
 
