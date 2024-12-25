@@ -10,8 +10,8 @@ body {
     margin: 0; 
 }
 
-#randomLinkButton {
-    background-color: #00cc00; 
+.button-link {
+    background-color: #b20000; 
     border: none;
     color: black;
     padding: 15px 30px;
@@ -23,23 +23,14 @@ body {
     border-radius: 5px;
 }
 
-#randomLinkButton:hover {
-    background-color: green;
+.button-link:hover {
+    background-color: red;
 }
 </style>
 </head>
 <body>
 
-    <button id="randomLinkButton" onclick="randomLink()">Посилання???</button>
-
-    <script>
-function randomLink() {
-    const urls = ["https://google.com", "https://www.youtube.com/watch?v=ESx_hy1n7HA", "https://youtube.com/watch?v=TzgPykFfQ5c", "https://www.youtube.com/watch?v=MDZC8VDZnV8"];
-    let randomIndex = Math.floor(Math.random() * urls.length); 
-    let randomUrl = urls[randomIndex];
-    window.open(randomUrl, '_blank');
-}
-    </script>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button-link" target="_blank">Сайт???</a>
 
 </body>
 </html>
