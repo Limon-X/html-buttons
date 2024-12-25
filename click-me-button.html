@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    min-height: 100vh;
+    margin: 0;
+    color: white; 
+}
+
+#tryItButton {
+    background-color: #0535b0;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#tryItButton:hover {
+    background-color: #0046fc;
+}
+
+.click-me-button {
+    background-color: #a600a6;
+    color: white;
+    padding: 15px 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.click-me-button:hover {
+    background-color: #cc00cc;
+}
+
+h3 {
+    margin-bottom: 0px;
+}
+
+</style>
+</head>
+<body>
+
+<h3>А що це таке?</h3>
+
+<button id="tryItButton" onclick="myFunction()">????????</button>
+
+<script>
+    function myFunction() {
+        var x = document.createElement("BUTTON");
+        var t = document.createTextNode("Кнопка?");
+        x.appendChild(t);
+        x.classList.add("click-me-button");
+        document.body.appendChild(x);
+    }
+</script>
+
+</body>
+</html>
